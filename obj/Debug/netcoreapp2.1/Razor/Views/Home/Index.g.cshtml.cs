@@ -58,7 +58,7 @@ using IdentityServer4.Quickstart.UI;
             WriteLiteral("\n<div class=\"welcome-page\">\n    <div class=\"row page-header\">\n        <div class=\"col-sm-10\">\n            <h1>\n                ");
             EndContext();
             BeginContext(246, 35, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "1bab26179e4c4fb0ae92d31f11bbf922", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ee98425c48ed44cfab9374154282f42a", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -87,7 +87,7 @@ using IdentityServer4.Quickstart.UI;
             WriteLiteral(")</small>\n            </h1>\n        </div>\n    </div>\n\n    <div class=\"row\">\n        <div class=\"col-sm-8\">\n            <p>\n                IdentityServer publishes a\n                ");
             EndContext();
             BeginContext(548, 67, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4e00f3ddb85e4195b28f0919be7c88d2", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8182e0432dc94371a4c905a8e98eb655", async() => {
                 BeginContext(593, 18, true);
                 WriteLiteral("discovery document");
                 EndContext();
@@ -108,7 +108,7 @@ using IdentityServer4.Quickstart.UI;
             WriteLiteral("\n                where you can find metadata and links to all the endpoints, key material, etc.\n            </p>\n        </div>\n        <div class=\"col-sm-8\">\n            <p>\n                Click ");
             EndContext();
             BeginContext(812, 27, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ab123681117f4cffab88ac437d284efd", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ee89c265c0db4f79a64bd31e1f4578bc", async() => {
                 BeginContext(831, 4, true);
                 WriteLiteral("here");
                 EndContext();

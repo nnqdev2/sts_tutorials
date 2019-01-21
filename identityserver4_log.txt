@@ -278,3 +278,142 @@
 2019-01-19 09:58:05.329 -08:00 [DBG] Consent Return Url Parameter: returnUrl
 2019-01-19 09:58:05.329 -08:00 [DBG] Error Url: /home/error
 2019-01-19 09:58:05.329 -08:00 [DBG] Error Id Parameter: errorId
+2019-01-19 10:33:29.088 -08:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-01-19 10:33:29.111 -08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-01-19 10:33:29.111 -08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-01-19 10:33:29.111 -08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-01-19 10:33:29.111 -08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-01-19 10:33:29.111 -08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-01-19 10:33:29.281 -08:00 [DBG] Starting grant removal
+2019-01-19 10:33:29.529 -08:00 [DBG] Login Url: /Account/Login
+2019-01-19 10:33:29.530 -08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-01-19 10:33:29.530 -08:00 [DBG] Logout Url: /Account/Logout
+2019-01-19 10:33:29.530 -08:00 [DBG] ConsentUrl Url: /consent
+2019-01-19 10:33:29.530 -08:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-01-19 10:33:29.530 -08:00 [DBG] Error Url: /home/error
+2019-01-19 10:33:29.530 -08:00 [DBG] Error Id Parameter: errorId
+2019-01-19 11:33:30.151 -08:00 [INF] Removing 0 grants
+2019-01-19 12:33:30.661 -08:00 [INF] Removing 0 grants
+2019-01-19 13:22:35.024 -08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-01-19 13:22:35.041 -08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-01-19 13:22:35.041 -08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-01-19 13:22:35.044 -08:00 [DBG] Start discovery request
+2019-01-19 13:22:36.315 -08:00 [DBG] Found ["openid","profile","api1"] as all scopes in database
+2019-01-19 13:33:31.092 -08:00 [INF] Removing 0 grants
+2019-01-20 19:22:24.429 -08:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-01-20 19:22:24.476 -08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-01-20 19:22:24.476 -08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-01-20 19:22:24.476 -08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-01-20 19:22:24.476 -08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-01-20 19:22:24.476 -08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-01-20 19:22:24.740 -08:00 [DBG] Starting grant removal
+2019-01-20 19:22:25.097 -08:00 [DBG] Login Url: /Account/Login
+2019-01-20 19:22:25.099 -08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-01-20 19:22:25.099 -08:00 [DBG] Logout Url: /Account/Logout
+2019-01-20 19:22:25.099 -08:00 [DBG] ConsentUrl Url: /consent
+2019-01-20 19:22:25.099 -08:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-01-20 19:22:25.099 -08:00 [DBG] Error Url: /home/error
+2019-01-20 19:22:25.099 -08:00 [DBG] Error Id Parameter: errorId
+2019-01-20 19:30:22.077 -08:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-01-20 19:30:22.100 -08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-01-20 19:30:22.101 -08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-01-20 19:30:22.101 -08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-01-20 19:30:22.101 -08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-01-20 19:30:22.101 -08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-01-20 19:30:22.233 -08:00 [DBG] Starting grant removal
+2019-01-20 19:30:22.528 -08:00 [DBG] Login Url: /Account/Login
+2019-01-20 19:30:22.530 -08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-01-20 19:30:22.530 -08:00 [DBG] Logout Url: /Account/Logout
+2019-01-20 19:30:22.530 -08:00 [DBG] ConsentUrl Url: /consent
+2019-01-20 19:30:22.530 -08:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-01-20 19:30:22.530 -08:00 [DBG] Error Url: /home/error
+2019-01-20 19:30:22.530 -08:00 [DBG] Error Id Parameter: errorId
+2019-01-20 20:03:30.796 -08:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-01-20 20:03:30.818 -08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-01-20 20:03:30.819 -08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-01-20 20:03:30.819 -08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-01-20 20:03:30.819 -08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-01-20 20:03:30.819 -08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-01-20 20:03:30.967 -08:00 [DBG] Starting grant removal
+2019-01-20 20:04:40.325 -08:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-01-20 20:04:40.347 -08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-01-20 20:04:40.347 -08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-01-20 20:04:40.347 -08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-01-20 20:04:40.347 -08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-01-20 20:04:40.347 -08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-01-20 20:04:40.460 -08:00 [DBG] Starting grant removal
+2019-01-20 20:09:52.238 -08:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-01-20 20:09:52.260 -08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-01-20 20:09:52.260 -08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-01-20 20:09:52.260 -08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-01-20 20:09:52.260 -08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-01-20 20:09:52.260 -08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-01-20 20:09:52.325 -08:00 [DBG] Starting grant removal
+2019-01-20 20:09:52.510 -08:00 [DBG] Login Url: /Account/Login
+2019-01-20 20:09:52.511 -08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-01-20 20:09:52.511 -08:00 [DBG] Logout Url: /Account/Logout
+2019-01-20 20:09:52.511 -08:00 [DBG] ConsentUrl Url: /consent
+2019-01-20 20:09:52.511 -08:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-01-20 20:09:52.511 -08:00 [DBG] Error Url: /home/error
+2019-01-20 20:09:52.511 -08:00 [DBG] Error Id Parameter: errorId
+2019-01-20 20:09:52.518 -08:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2019-01-20 20:09:52.527 -08:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2019-01-20 20:36:22.771 -08:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-01-20 20:36:22.792 -08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-01-20 20:36:22.792 -08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-01-20 20:36:22.792 -08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-01-20 20:36:22.793 -08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-01-20 20:36:22.793 -08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-01-20 20:36:22.927 -08:00 [DBG] Starting grant removal
+2019-01-20 20:36:23.106 -08:00 [DBG] Login Url: /Account/Login
+2019-01-20 20:36:23.108 -08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-01-20 20:36:23.108 -08:00 [DBG] Logout Url: /Account/Logout
+2019-01-20 20:36:23.108 -08:00 [DBG] ConsentUrl Url: /consent
+2019-01-20 20:36:23.108 -08:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-01-20 20:36:23.108 -08:00 [DBG] Error Url: /home/error
+2019-01-20 20:36:23.108 -08:00 [DBG] Error Id Parameter: errorId
+2019-01-20 20:36:23.116 -08:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2019-01-20 20:36:23.127 -08:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2019-01-20 20:50:15.721 -08:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-01-20 20:50:15.743 -08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-01-20 20:50:15.743 -08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-01-20 20:50:15.743 -08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-01-20 20:50:15.743 -08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-01-20 20:50:15.743 -08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-01-20 20:50:15.864 -08:00 [DBG] Starting grant removal
+2019-01-20 20:50:16.067 -08:00 [DBG] Login Url: /Account/Login
+2019-01-20 20:50:16.068 -08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-01-20 20:50:16.068 -08:00 [DBG] Logout Url: /Account/Logout
+2019-01-20 20:50:16.068 -08:00 [DBG] ConsentUrl Url: /consent
+2019-01-20 20:50:16.068 -08:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-01-20 20:50:16.069 -08:00 [DBG] Error Url: /home/error
+2019-01-20 20:50:16.069 -08:00 [DBG] Error Id Parameter: errorId
+2019-01-20 20:50:16.077 -08:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2019-01-20 20:50:16.086 -08:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2019-01-20 20:52:59.023 -08:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2019-01-20 20:52:59.023 -08:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2019-01-20 20:52:59.193 -08:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2019-01-20 20:52:59.193 -08:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2019-01-20 20:52:59.279 -08:00 [INF] AuthenticationScheme: idsrv.external signed in.
+2019-01-20 20:52:59.283 -08:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2019-01-20 20:52:59.283 -08:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2019-01-20 20:52:59.393 -08:00 [INF] {"Username":null,"Provider":"Windows","ProviderUserId":"DEQ\\nquan","SubjectId":"5fa08bf34f9c3571ce6dfdb4573fb60ed16ffa64565dca19a8809b88d787e111","DisplayName":"DEQ\\nquan","Endpoint":"UI","Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HLJVBFNQT2UI:00000004","TimeStamp":"2019-01-21T04:52:59.0000000Z","ProcessId":32616,"LocalIpAddress":"127.0.0.1:6626","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2019-01-20 20:52:59.411 -08:00 [DBG] Augmenting SignInContext
+2019-01-20 20:52:59.414 -08:00 [DBG] Adding amr claim with value: external
+2019-01-20 20:52:59.417 -08:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2019-01-20 20:52:59.419 -08:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2019-01-20 20:52:59.423 -08:00 [INF] AuthenticationScheme: idsrv.external signed out.
+2019-01-20 20:57:39.555 -08:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-01-20 20:57:39.577 -08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-01-20 20:57:39.577 -08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-01-20 20:57:39.577 -08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-01-20 20:57:39.577 -08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-01-20 20:57:39.577 -08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-01-20 20:57:39.705 -08:00 [DBG] Starting grant removal
+2019-01-20 20:57:39.965 -08:00 [DBG] Login Url: /Account/Login
+2019-01-20 20:57:39.968 -08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-01-20 20:57:39.968 -08:00 [DBG] Logout Url: /Account/Logout
+2019-01-20 20:57:39.968 -08:00 [DBG] ConsentUrl Url: /consent
+2019-01-20 20:57:39.968 -08:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-01-20 20:57:39.968 -08:00 [DBG] Error Url: /home/error
+2019-01-20 20:57:39.968 -08:00 [DBG] Error Id Parameter: errorId
