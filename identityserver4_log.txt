@@ -417,3 +417,48 @@
 2019-01-20 20:57:39.968 -08:00 [DBG] Consent Return Url Parameter: returnUrl
 2019-01-20 20:57:39.968 -08:00 [DBG] Error Url: /home/error
 2019-01-20 20:57:39.968 -08:00 [DBG] Error Id Parameter: errorId
+2019-01-20 21:02:43.343 -08:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-01-20 21:02:43.365 -08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-01-20 21:02:43.365 -08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-01-20 21:02:43.365 -08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-01-20 21:02:43.365 -08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-01-20 21:02:43.365 -08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-01-20 21:02:43.495 -08:00 [DBG] Starting grant removal
+2019-01-20 21:02:43.790 -08:00 [DBG] Login Url: /Account/Login
+2019-01-20 21:02:43.792 -08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-01-20 21:02:43.792 -08:00 [DBG] Logout Url: /Account/Logout
+2019-01-20 21:02:43.792 -08:00 [DBG] ConsentUrl Url: /consent
+2019-01-20 21:02:43.792 -08:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-01-20 21:02:43.792 -08:00 [DBG] Error Url: /home/error
+2019-01-20 21:02:43.792 -08:00 [DBG] Error Id Parameter: errorId
+2019-01-20 21:11:06.936 -08:00 [INF] AuthenticationScheme: idsrv.external signed in.
+2019-01-20 21:11:06.995 -08:00 [INF] {"Username":null,"Provider":"Windows","ProviderUserId":"DEQ\\nquan","SubjectId":"c6a1cf25e651bd5defba3abb53ab59e6f7b8b29f6fec096184fa07d686bb7329","DisplayName":"DEQ\\nquan","Endpoint":"UI","Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HLJVBMMLNJRL:00000004","TimeStamp":"2019-01-21T05:11:06.0000000Z","ProcessId":17512,"LocalIpAddress":"127.0.0.1:40274","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2019-01-20 21:11:07.010 -08:00 [DBG] Augmenting SignInContext
+2019-01-20 21:11:07.011 -08:00 [DBG] Adding amr claim with value: external
+2019-01-20 21:11:07.015 -08:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2019-01-20 21:11:07.020 -08:00 [INF] AuthenticationScheme: idsrv.external signed out.
+2019-01-20 21:48:08.910 -08:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-01-20 21:48:08.934 -08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-01-20 21:48:08.934 -08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-01-20 21:48:08.934 -08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-01-20 21:48:08.934 -08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-01-20 21:48:08.934 -08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-01-20 21:48:09.066 -08:00 [DBG] Starting grant removal
+2019-01-20 21:48:09.358 -08:00 [DBG] Login Url: /Account/Login
+2019-01-20 21:48:09.361 -08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-01-20 21:48:09.361 -08:00 [DBG] Logout Url: /Account/Logout
+2019-01-20 21:48:09.361 -08:00 [DBG] ConsentUrl Url: /consent
+2019-01-20 21:48:09.361 -08:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-01-20 21:48:09.361 -08:00 [DBG] Error Url: /home/error
+2019-01-20 21:48:09.361 -08:00 [DBG] Error Id Parameter: errorId
+2019-01-20 21:48:10.022 -08:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2019-01-20 21:48:10.023 -08:00 [INF] AuthenticationScheme: Identity.External signed out.
+2019-01-20 21:48:10.024 -08:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2019-01-20 21:48:10.027 -08:00 [INF] Identity.Application was not authenticated. Failure message: No principal.
+2019-01-20 21:48:10.038 -08:00 [INF] Identity.Application was not authenticated. Failure message: No principal.
+2019-01-20 21:48:42.547 -08:00 [INF] AuthenticationScheme: Identity.External signed in.
+2019-01-20 21:48:43.222 -08:00 [INF] {"Username":null,"Provider":"Windows","ProviderUserId":"DEQ\\nquan","SubjectId":"e6577450-acb0-4d6e-9ef6-527001d3c900","DisplayName":"DEQ\\nquan","Endpoint":"UI","Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HLJVCG2ULBFQ:00000002","TimeStamp":"2019-01-21T05:48:43.0000000Z","ProcessId":35128,"LocalIpAddress":"127.0.0.1:10235","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2019-01-20 21:48:43.244 -08:00 [DBG] Augmenting SignInContext
+2019-01-20 21:48:43.246 -08:00 [DBG] Adding amr claim with value: external
+2019-01-20 21:48:43.251 -08:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2019-01-20 21:48:43.251 -08:00 [INF] AuthenticationScheme: Identity.External signed out.
