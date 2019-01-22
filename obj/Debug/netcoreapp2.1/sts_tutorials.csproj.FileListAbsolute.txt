@@ -37,3 +37,4 @@ S:\netcore_tutorials\sts_tutorials\obj\Debug\netcoreapp2.1\sts_tutorials.Views.p
 S:\netcore_tutorials\sts_tutorials\obj\Debug\netcoreapp2.1\sts_tutorials.dll
 S:\netcore_tutorials\sts_tutorials\obj\Debug\netcoreapp2.1\sts_tutorials.pdb
 S:\netcore_tutorials\sts_tutorials\obj\Debug\netcoreapp2.1\sts_tutorials.csproj.CopyComplete
+S:\netcore_tutorials\sts_tutorials\obj\Debug\netcoreapp2.1\sts_tutorials.csprojAssemblyReference.cache
