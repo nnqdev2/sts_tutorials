@@ -619,3 +619,23 @@ System.Exception: External authentication error
 2019-01-21 13:55:35.309 -08:00 [INF] Removing 0 grants
 2019-01-21 14:55:35.760 -08:00 [INF] Removing 0 grants
 2019-01-21 15:55:36.135 -08:00 [INF] Removing 0 grants
+2019-01-23 14:01:53.613 -08:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-01-23 14:01:53.655 -08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-01-23 14:01:53.655 -08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-01-23 14:01:53.655 -08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-01-23 14:01:53.655 -08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-01-23 14:01:53.655 -08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-01-23 14:01:54.152 -08:00 [DBG] Starting grant removal
+2019-01-23 14:01:54.543 -08:00 [DBG] Login Url: /Account/Login
+2019-01-23 14:01:54.545 -08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-01-23 14:01:54.545 -08:00 [DBG] Logout Url: /Account/Logout
+2019-01-23 14:01:54.545 -08:00 [DBG] ConsentUrl Url: /consent
+2019-01-23 14:01:54.545 -08:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-01-23 14:01:54.545 -08:00 [DBG] Error Url: /home/error
+2019-01-23 14:01:54.545 -08:00 [DBG] Error Id Parameter: errorId
+2019-01-23 14:01:57.412 -08:00 [INF] AuthenticationScheme: Identity.External signed in.
+2019-01-23 14:01:57.824 -08:00 [INF] {"Username":null,"Provider":"Windows","ProviderUserId":"DEQ\\nquan","SubjectId":"e6577450-acb0-4d6e-9ef6-527001d3c900","DisplayName":"DEQ\\nquan","Endpoint":"UI","Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HLK1FPHBQ376:00000003","TimeStamp":"2019-01-23T22:01:57.0000000Z","ProcessId":21140,"LocalIpAddress":"127.0.0.1:20278","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2019-01-23 14:01:57.949 -08:00 [DBG] Augmenting SignInContext
+2019-01-23 14:01:57.950 -08:00 [DBG] Adding amr claim with value: external
+2019-01-23 14:01:57.955 -08:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2019-01-23 14:01:57.959 -08:00 [INF] AuthenticationScheme: Identity.External signed out.
