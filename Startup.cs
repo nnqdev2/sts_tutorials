@@ -69,8 +69,6 @@ namespace sts_tutorials
                     options.EnableTokenCleanup = true;
                 });
 
-            services.AddAuthentication().
-
             //services.AddAuthentication()
             //    .AddGoogle(options =>
             //    {
