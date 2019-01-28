@@ -12,6 +12,7 @@ using Microsoft.AspNetCore.Hosting;
 using sts_tutorial.Data;
 using sts_tutorials.Models;
 using Microsoft.AspNetCore.Identity;
+using IdentityServer4;
 
 namespace sts_tutorials
 {
@@ -40,9 +41,11 @@ namespace sts_tutorials
 
             services.Configure<IISOptions>(options =>
             {
-                options.AutomaticAuthentication = true;
+                options.AutomaticAuthentication = false;
                 options.AuthenticationDisplayName = "Windows";
             });
+
+
 
             var connectionString = Configuration.GetConnectionString("DefaultConnection");
 
@@ -69,6 +72,16 @@ namespace sts_tutorials
                     options.EnableTokenCleanup = true;
                 });
 
+
+            //services.AddAuthentication()
+            //    .AddIdentityServerAuthentication("api", options =>
+            //    {
+            //        options.Authority = "http://localhost:44317";
+            //        options.RequireHttpsMetadata = false;
+            //        options.ApiName = "api1";
+            //    });
+
+            
             //services.AddAuthentication()
             //    .AddGoogle(options =>
             //    {
@@ -80,6 +93,13 @@ namespace sts_tutorials
             //        options.ClientId = "copy client ID from Google here";
             //        options.ClientSecret = "copy client secret from Google here";
             //    });
+
+            services.AddCors(o => o.AddPolicy("MyPolicy", builder =>
+            {
+                builder.AllowAnyOrigin()
+                       .AllowAnyMethod()
+                       .AllowAnyHeader();
+            }));
 
             if (Environment.IsDevelopment())
             {
@@ -93,6 +113,14 @@ namespace sts_tutorials
 
         public void Configure(IApplicationBuilder app)
         {
+            // Shows UseCors with CorsPolicyBuilder.
+            app.UseCors(builder =>
+               builder.WithOrigins("http://localhost:4200"));
+
+            //app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
+
+            //app.UseCors("MyPolicy");
+
             if (Environment.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

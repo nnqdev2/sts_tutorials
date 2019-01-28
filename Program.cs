@@ -11,6 +11,7 @@ using Serilog.Events;
 using System.Linq;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
+using System.IO;
 
 namespace sts_tutorials
 {
@@ -22,7 +23,7 @@ namespace sts_tutorials
 
             var seed = args.Contains("/seed");
             // var seed = args.Any(x => x == "/seed");
-            // var seed = true;
+            //var seed = true;
             if (seed)
             {
                 args = args.Except(new[] { "/seed" }).ToArray();
@@ -45,6 +46,10 @@ namespace sts_tutorials
         public static IWebHostBuilder CreateWebHostBuilder(string[] args)
         {
             return WebHost.CreateDefaultBuilder(args)
+                .UseKestrel()
+                .UseContentRoot(Directory.GetCurrentDirectory())
+                .UseUrls("http://localhost:44317")
+                .UseIISIntegration()
                     .UseStartup<Startup>()
                     .UseSerilog((context, configuration) =>
                     {

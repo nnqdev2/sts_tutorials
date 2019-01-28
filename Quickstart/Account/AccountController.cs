@@ -30,7 +30,7 @@ namespace IdentityServer4.Quickstart.UI
     /// The interaction service provides a way for the UI to communicate with identityserver for validation and context retrieval
     /// </summary>
     [SecurityHeaders]
-    //[AllowAnonymous]
+    [AllowAnonymous]
     public class AccountController : Controller
     {
         //private readonly TestUserStore _users;
@@ -180,7 +180,8 @@ namespace IdentityServer4.Quickstart.UI
         public async Task<IActionResult> ExternalLoginCallback()
         {
             // read external identity from the temporary cookie
-            var result = await HttpContext.AuthenticateAsync(IdentityConstants.ExternalScheme);
+            //var result = await HttpContext.AuthenticateAsync(IdentityConstants.ExternalScheme);
+            var result = await HttpContext.AuthenticateAsync(IdentityServer4.IdentityServerConstants.ExternalCookieAuthenticationScheme);
             if (result?.Succeeded != true)
             {
                 throw new Exception("External authentication error");
@@ -327,13 +328,15 @@ namespace IdentityServer4.Quickstart.UI
                     AuthenticationScheme = x.Name
                 }).ToList();
 
-            var allowLocal = true;
+            //var allowLocal = true;
+            var allowLocal = false;
             if (context?.ClientId != null)
             {
                 var client = await _clientStore.FindEnabledClientByIdAsync(context.ClientId);
                 if (client != null)
                 {
                     allowLocal = client.EnableLocalLogin;
+                    allowLocal = false;
 
                     if (client.IdentityProviderRestrictions != null && client.IdentityProviderRestrictions.Any())
                     {
@@ -455,12 +458,12 @@ namespace IdentityServer4.Quickstart.UI
                     id.AddClaims(roles);
                 }
 
-                await HttpContext.SignInAsync(IdentityConstants.ExternalScheme, new ClaimsPrincipal(id), props);
+                // await HttpContext.SignInAsync(IdentityConstants.ExternalScheme, new ClaimsPrincipal(id), props);
 
-                //await HttpContext.SignInAsync(
-                //    IdentityServer4.IdentityServerConstants.ExternalCookieAuthenticationScheme,
-                //    new ClaimsPrincipal(id),
-                //    props);
+                await HttpContext.SignInAsync(
+                    IdentityServer4.IdentityServerConstants.ExternalCookieAuthenticationScheme,
+                    new ClaimsPrincipal(id),
+                    props);
                 return Redirect(props.RedirectUri);
             }
             else

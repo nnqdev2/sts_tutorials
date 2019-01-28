@@ -82,6 +82,19 @@ namespace sts_tutorials
                     AllowedCorsOrigins = { "http://localhost:5002" },
 
                     AllowedScopes = { "openid", "profile", "api1" }
+                },
+                new Client
+                {
+                    ClientId = "angular_spa",
+                    ClientName = "Angular 4 Client",
+                    AllowedGrantTypes = GrantTypes.Implicit,
+                    AllowedScopes = new List<string> {"openid", "profile"},
+                    RedirectUris = new List<string> {"http://localhost:4200/auth-callback", "http://localhost:4200/silent-refresh.html"},
+                    PostLogoutRedirectUris = new List<string> {"http://localhost:4200/"},
+                    AllowedCorsOrigins = new List<string> {"http://localhost:4200"},
+                    AllowAccessTokensViaBrowser = true,
+                    RequireConsent = false,
+                    //AllowRememberConsent = true,
                 }
             };
         }
