@@ -75,6 +75,7 @@ namespace sts_tutorials
                     options.EnableTokenCleanup = true;
                 });
 
+            //services.AddAuthentication(IdentityConstants.ExternalScheme);
 
             //services.AddAuthentication()
             //    .AddIdentityServerAuthentication("api", options =>
@@ -84,7 +85,7 @@ namespace sts_tutorials
             //        options.ApiName = "api1";
             //    });
 
-            
+
             //services.AddAuthentication()
             //    .AddGoogle(options =>
             //    {

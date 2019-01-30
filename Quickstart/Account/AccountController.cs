@@ -162,7 +162,7 @@ namespace IdentityServer4.Quickstart.UI
                 // start challenge and roundtrip the return URL and 
                 var props = new AuthenticationProperties()
                 {
-                    RedirectUri = Url.Action("Callback"),
+                    RedirectUri = Url.Action("ExternalLoginCallback"),
                     Items =
                     {
                         { "returnUrl", returnUrl },
