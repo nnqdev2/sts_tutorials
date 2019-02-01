@@ -216,6 +216,18 @@ namespace IdentityServer4.Quickstart.UI
             //    additionalLocalClaims.AddRange(claims);
             //}
 
+
+            // this allows us to collect any additonal claims or properties
+            // for the specific prtotocols used and store them in the local auth cookie.
+            // this is typically used to store data needed for signout from those protocols.
+            // var additionalLocalClaims = new List<Claim>();
+
+            var roleClaims = claims.Where(c => c.Type == JwtClaimTypes.Role).ToList();
+            if (roleClaims.Count > 0)
+            {
+                additionalLocalClaims.AddRange(roleClaims);
+            }
+
             additionalLocalClaims.AddRange(principal.Claims);
             var name = principal.FindFirst(JwtClaimTypes.Name)?.Value ?? user.Id;
             await _events.RaiseAsync(new UserLoginSuccessEvent(provider, providerUserId, user.Id, name));

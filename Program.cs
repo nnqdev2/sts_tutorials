@@ -23,7 +23,7 @@ namespace sts_tutorials
 
             var seed = args.Contains("/seed");
             // var seed = args.Any(x => x == "/seed");
-            //var seed = true;
+            // var seed = true;
             if (seed)
             {
                 args = args.Except(new[] { "/seed" }).ToArray();
@@ -36,7 +36,7 @@ namespace sts_tutorials
                 var config = host.Services.GetRequiredService<IConfiguration>();
                 var connectionString = config.GetConnectionString("DefaultConnection");
                 SeedData.EnsureSeedData(connectionString);
-                SeedData.EnsureSeedDataIdentity(host.Services);
+                //SeedData.EnsureSeedDataIdentity(host.Services);
                 return;
             }
 

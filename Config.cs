@@ -31,6 +31,56 @@ namespace sts_tutorials
         {
             return new[]
             {
+ 
+
+                // SPA client using implicit flow
+                //new Client
+                //{
+                //    ClientId = "spa",
+                //    ClientName = "SPA Client",
+                //    ClientUri = "http://identityserver.io",
+
+                //    AllowedGrantTypes = GrantTypes.Implicit,
+                //    AllowAccessTokensViaBrowser = true,
+
+                //    RedirectUris =
+                //    {
+                //        "http://localhost:5002/index.html",
+                //        "http://localhost:5002/callback.html",
+                //        "http://localhost:5002/silent.html",
+                //        "http://localhost:5002/popup.html",
+                //    },
+
+                //    PostLogoutRedirectUris = { "http://localhost:5002/index.html" },
+                //    AllowedCorsOrigins = { "http://localhost:5002" },
+
+                //    AllowedScopes = { "openid", "profile", "api1" }
+                //},
+                new Client
+                {
+                    ClientId = "angular_spa2",
+                    ClientName = "Angular 4 Client",
+                    AllowedGrantTypes = GrantTypes.Implicit,
+                    AllowedScopes = new List<string> {"openid", "profile"},
+                    RedirectUris = new List<string> {"http://localhost:4200/auth-callback", "http://localhost:4200/silent-refresh.html"},
+                    PostLogoutRedirectUris = new List<string> {"http://localhost:4200/"},
+                    AllowedCorsOrigins = new List<string> {"http://localhost:4200"},
+                    AllowAccessTokensViaBrowser = true,
+                    RequireConsent = false,
+                    AlwaysIncludeUserClaimsInIdToken = true,
+                    //AllowRememberConsent = true,
+                }
+            };
+        }
+
+
+
+
+
+        public static IEnumerable<Client> GetClientsOrig()
+        {
+            return new[]
+            {
                 // client credentials flow client
                 new Client
                 {
@@ -94,6 +144,7 @@ namespace sts_tutorials
                     AllowedCorsOrigins = new List<string> {"http://localhost:4200"},
                     AllowAccessTokensViaBrowser = true,
                     RequireConsent = false,
+                    AlwaysIncludeUserClaimsInIdToken = true,
                     //AllowRememberConsent = true,
                 }
             };

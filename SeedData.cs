@@ -45,6 +45,55 @@ namespace sts_tutorials
             }
         }
 
+        private static void EnsureSeedDataOLD(IConfigurationDbContext context)
+        {
+            Console.WriteLine("******Seeding sts4 database...");
+
+  
+            {
+                Console.WriteLine("Clients being populated");
+                foreach (var client in Config.GetClients().ToList())
+                {
+                    context.Clients.Add(client.ToEntity());
+                }
+                context.SaveChanges();
+            }
+ 
+
+            if (!context.IdentityResources.Any())
+            {
+                Console.WriteLine("IdentityResources being populated");
+                foreach (var resource in Config.GetIdentityResources().ToList())
+                {
+                    context.IdentityResources.Add(resource.ToEntity());
+                }
+                context.SaveChanges();
+            }
+            else
+            {
+                Console.WriteLine("IdentityResources already populated");
+            }
+
+            if (!context.ApiResources.Any())
+            {
+                Console.WriteLine("ApiResources being populated");
+                foreach (var resource in Config.GetApis().ToList())
+                {
+                    context.ApiResources.Add(resource.ToEntity());
+                }
+                context.SaveChanges();
+            }
+            else
+            {
+                Console.WriteLine("ApiResources already populated");
+            }
+
+            Console.WriteLine("******Done seeding sts4 database.");
+            Console.WriteLine();
+        }
+
+
+
         private static void EnsureSeedData(IConfigurationDbContext context)
         {
             Console.WriteLine("******Seeding sts4 database...");
@@ -94,8 +143,6 @@ namespace sts_tutorials
             Console.WriteLine("******Done seeding sts4 database.");
             Console.WriteLine();
         }
-
-
 
 
 

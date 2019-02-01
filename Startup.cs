@@ -16,6 +16,9 @@ using IdentityServer4;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Http;
 using System.Linq;
+using IdentityServer4.AspNetIdentity;
+using sts_tutorials.Quickstart.Account;
+using IdentityServer4.Services;
 
 namespace sts_tutorials
 {
@@ -73,7 +76,9 @@ namespace sts_tutorials
 
                     // this enables automatic token cleanup. this is optional.
                     options.EnableTokenCleanup = true;
-                });
+                })
+                .AddProfileService<ProfileService>()
+                ;
 
             //services.AddAuthentication(IdentityConstants.ExternalScheme);
 
@@ -98,12 +103,29 @@ namespace sts_tutorials
             //        options.ClientSecret = "copy client secret from Google here";
             //    });
 
-            services.AddCors(o => o.AddPolicy("MyPolicy", builder =>
+            //var cors = new DefaultCorsPolicyService(_loggerFactory.CreateLogger<DefaultCorsPolicyService>())
+            //{
+            //    AllowedOrigins = { "http://foo", "https://bar" }
+            //};
+            //services.AddSingleton<ICorsPolicyService>(cors);
+            services.AddCors(options =>
             {
-                builder.AllowAnyOrigin()
-                       .AllowAnyMethod()
-                       .AllowAnyHeader();
-            }));
+                options.AddPolicy("AllowSpecificOrigin",
+                    builder => builder
+                        .WithOrigins("http://localhost:4200")
+                        .AllowAnyHeader()
+                        .AllowAnyMethod()
+                        .AllowCredentials()
+                    );
+            });
+
+
+            //services.AddCors(o => o.AddPolicy("MyPolicy", builder =>
+            //{
+            //    builder.AllowAnyOrigin()
+            //           .AllowAnyMethod()
+            //           .AllowAnyHeader();
+            //}));
 
             if (Environment.IsDevelopment())
             {
@@ -118,8 +140,8 @@ namespace sts_tutorials
         public void Configure(IApplicationBuilder app)
         {
             // Shows UseCors with CorsPolicyBuilder.
-            app.UseCors(builder =>
-               builder.WithOrigins("http://localhost:4200"));
+            //app.UseCors(builder =>
+            //   builder.WithOrigins("http://localhost:4200"));
 
             //app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
 
@@ -192,7 +214,8 @@ namespace sts_tutorials
                 await next();
             });
 
-         app.UseIdentityServer();
+            app.UseCors("default");
+            app.UseIdentityServer();
             app.UseStaticFiles();
             app.UseMvcWithDefaultRoute();
         }
